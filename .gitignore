@@ -1,6 +1,0 @@
-__pycache__/
-sow_env/
-*.pyc
-*.pkl
-*.faiss
-output/
