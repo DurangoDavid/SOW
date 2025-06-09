@@ -1,6 +1,10 @@
 
 # AI-Powered Statement of Work (SOW) Generator
 
+Live at: https://gtmharmony.io/sow
+
+---------Install Your Own Local Copy---------------------------------------
+
 A dynamic, AI-powered SOW generator that creates professional Statements of Work leveraging OpenAI's embeddings and completions, FAISS for efficient vector retrieval, DuckDuckGo integration for real-time tech context, and Flask for the web interface.
 
 ---
