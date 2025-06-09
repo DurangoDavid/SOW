@@ -1,0 +1,6 @@
+*.env
+*.err
+*.log
+*.save
+*.sh
+./sow_env
