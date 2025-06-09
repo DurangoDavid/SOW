@@ -3,4 +3,4 @@
 *.log
 *.save
 *.sh
-./sow_env
+./sow_env/
