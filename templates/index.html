@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOW Generator</title>
+<link rel="icon" href="https://gtmharmony.com/favicon.ico" type="image/x-icon"/>
+  <style>
+    /* ─── Base styling ──────────────────────────────────────────── */
+    body { font-family: Georgia, serif; margin:40px; color:#333; }
+    h1   { font-size:28px; margin-bottom:20px; }
+    .field { margin-bottom:20px; }
+    .field label { display:block; font-weight:bold; margin-bottom:5px; }
+    .field textarea, .field input {
+      width:100%; padding:8px; font-size:16px;
+      border:1px solid #ccc; border-radius:4px;
+    }
+    .hint { font-size:14px; color:#666; margin-top:3px; }
+    button {
+      font-size:16px; padding:10px 20px;
+      background:#0056b3; color:#fff;
+      border:none; border-radius:4px; cursor:pointer;
+    }
+    button:hover { background:#004494; }
+
+    #sow { margin-top:30px; padding:20px;
+           border:1px solid #ccc; border-radius:4px; background:#fafafa; }
+    #sow h2, #sow h3 { margin-top:20px; }
+    #sow p, #sow ul, #sow ol { font-size:16px; line-height:1.5; }
+
+    /* ─── Spinner overlay ───────────────────────────────────────── */
+    #loader {
+      display:none; position:fixed; inset:0;
+      background:rgba(255,255,255,.8);
+      z-index:9999;
+      align-items:center; justify-content:center; flex-direction:column;
+    }
+    .spin {
+      width:40px; height:40px;
+      border:6px solid #ccc; border-top-color:#0056b3;
+      border-radius:50%;
+      animation:spin 1s linear infinite; margin-bottom:10px;
+    }
+    @keyframes spin { to { transform:rotate(360deg);} }
+  </style>
+</head>
+<body>
+  <h1>SOW Generator</h1>
+
+  <!-- ── MAIN FORM (shows spinner while POST is processed) ── -->
+  <form id="generateForm" method="post">
+    <!-- Problem -->
+    <div class="field">
+      <label for="problem">Problem Statement</label>
+      <textarea id="problem" name="problem" placeholder="Describe the challenge in detail…" required>{{ problem }}</textarea>
+      <div class="hint">
+        <strong>Good:</strong> We can't rely on our dashboards and reporting …<br>
+        <strong>Bad:</strong> We need better dashboards
+      </div>
+    </div>
+
+    <!-- Stakeholders -->
+    <div class="field">
+      <label for="participants">Stakeholders / Participants</label>
+      <textarea id="participants" name="participants" placeholder="List roles or departments…" required>{{ participants }}</textarea>
+      <div class="hint">
+        <strong>Good:</strong> Sales Ops Admin, Digital Marketing Manager, Head of BI, CFO<br>
+        <strong>Bad:</strong> Everyone
+      </div>
+    </div>
+
+    <!-- GTM Stack -->
+    <div class="field">
+      <label for="gtm_stack">GTM Stack (CRM / MAP / etc.)</label>
+      <input id="gtm_stack" name="gtm_stack" type="text" placeholder="e.g. SFDC, HubSpot, Apollo" value="{{ gtm_stack }}">
+      <div class="hint">
+        Example: SFDC, HubSpot, Apollo .io
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="field">
+      <label for="timeline">Proposed Timeline</label>
+      <input id="timeline" name="timeline" type="text" placeholder="e.g. 6 weeks with phased milestones" value="{{ timeline }}" required>
+      <div class="hint">
+        Faster timelines possible with additional resources; final schedule set after SOW review.
+      </div>
+    </div>
+
+    <button type="submit">Generate SOW</button>
+  </form>
+
+  {% if answer %}
+    <!-- ── Rendered SOW ── -->
+    <div id="sow">{{ answer|safe }}</div>
+
+    <!-- ── PDF Export form ── -->
+    <form action="/export" method="post" target="_blank">
+      <!-- strip ```html fences if model inserted them -->
+      <textarea name="answer_html" hidden>
+{{ answer
+   | replace('```html','')
+   | replace('```','')
+   | safe }}
+      </textarea>
+      <button type="submit">Export as PDF</button>
+    </form>
+  {% endif %}
+
+  <!-- ── Spinner overlay markup ── -->
+  <div id="loader">
+    <div class="spin"></div>
+    <p>Generating&nbsp;SOW…</p>
+  </div>
+
+  <!-- ── Spinner logic ── -->
+  <script>
+    document.getElementById('generateForm').addEventListener('submit', () => {
+      document.getElementById('loader').style.display = 'flex';
+    });
+  </script>
+</body>
+</html>

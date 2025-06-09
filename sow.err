@@ -1,0 +1,213 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+127.0.0.1 - - [09/Jun/2025 00:28:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:28:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:29:47] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:29:53] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:33:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:34:53] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:34:56] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 00:36:01] "POST /export HTTP/1.1" 200 -
+ * Detected change in '/home/d83maxey/sow/sow.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+127.0.0.1 - - [09/Jun/2025 01:40:00] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:40:19] "POST /export HTTP/1.1" 200 -
+ * Detected change in '/home/d83maxey/sow/sow.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+127.0.0.1 - - [09/Jun/2025 01:43:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:44:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:45:22] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:46:38] "POST /export HTTP/1.1" 200 -
+ * Detected change in '/home/d83maxey/sow/sow.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+127.0.0.1 - - [09/Jun/2025 01:53:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:53:14] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:54:19] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:54:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 01:55:40] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/d83maxey/sow/sow.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 177-449-317
+127.0.0.1 - - [09/Jun/2025 01:59:22] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:17:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:18:30] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:18:49] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:19:08] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:19:33] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:19:54] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:20:48] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/d83maxey/sow/sow.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+Traceback (most recent call last):
+  File "/home/d83maxey/sow/sow.py", line 68, in <module>
+    limiter = Limiter(
+TypeError: Limiter.__init__() got multiple values for argument 'key_func'
+  File "/home/d83maxey/sow/sow.py", line 80
+    ) == HOME_IP
+    ^
+SyntaxError: unmatched ')'
+  File "/home/d83maxey/sow/sow.py", line 80
+    ) == HOME_IP
+    ^
+SyntaxError: unmatched ')'
+  File "/home/d83maxey/sow/sow.py", line 80
+    ) == HOME_IP
+    ^
+SyntaxError: unmatched ')'
+  File "/home/d83maxey/sow/sow.py", line 80
+    ) == HOME_IP
+    ^
+SyntaxError: unmatched ')'
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 02:58:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:59:06] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:59:30] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 02:59:51] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:00:17] "POST / HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:01:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:02:16] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:02:38] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:02:44] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:03:03] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:03:30] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:03:42] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:03:52] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:04:13] "POST / HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:04:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:04:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:05:16] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:05:20] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+127.0.0.1 - - [09/Jun/2025 03:06:04] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:06:06] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:09:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:09:59] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:10:04] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+127.0.0.1 - - [09/Jun/2025 03:11:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:11:58] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:12:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:12:52] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:13:12] "[31m[1mPOST / HTTP/1.1[0m" 429 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:20:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:21:34] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:21:38] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:22:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:22:29] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:22:33] "[31m[1mPOST /export HTTP/1.1[0m" 429 -
+127.0.0.1 - - [09/Jun/2025 03:24:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:25:36] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:26:15] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:26:32] "[31m[1mPOST /export HTTP/1.1[0m" 429 -
+127.0.0.1 - - [09/Jun/2025 03:29:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:30:17] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:30:41] "[31m[1mPOST /export HTTP/1.1[0m" 429 -
+127.0.0.1 - - [09/Jun/2025 03:31:58] "GET / HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [09/Jun/2025 03:32:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:32:53] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:33:14] "POST /export HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jun/2025 03:33:16] "[31m[1mPOST /export HTTP/1.1[0m" 429 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+[33mPress CTRL+C to quit[0m
