@@ -43,7 +43,7 @@ This tool streamlines the creation of tailored Statements of Work (SOWs) by inte
 ### Step 1: Clone Repository
 
 ```
-git clone git@github.com:DurangoDavid/SOW.git && cd SOW
+git clone https://github.com/DurangoDavid/SOW.git && cd SOW
 ```
 
 ### Step 2: Set Up Python Environment
