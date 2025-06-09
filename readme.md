@@ -68,23 +68,6 @@ Create `.env` file at the project root:
 OPENAI_API_KEY=your_openai_api_key
 HOME_IP=your_static_home_ip
 ```
-
----
-
-## 📚 Managing Embeddings
-
-### Initial Setup:
-
-```
-python scripts/build_index.py
-```
-
-### Adding New Documents:
-
-```
-python scripts/append.py
-```
-
 ---
 
 ## 🚀 Launching the Web App
@@ -102,6 +85,25 @@ http://localhost:8000
 ```
 
 ---
+---
+
+## 📚 Managing Embeddings
+
+### Initial Setup: (you are starting out with 50+ articles, sample SOW, and industry benchmark data) If you want to start from scratch, clear out the the output directory, place your files in /input and run build_index.py from the scripts directory eg: /project_root/scripts/python build_index.py
+There are no arguments to the the command, it assumes input files are located in the /input folder and will build the FAISS index in the /output folder
+
+```
+python scripts/build_index.py
+```
+
+### Adding New Documents: Place files in the /input directory (doc, txt, md, csv, pdf files types are supported), navigate to the scripts directory and run /project_root/scripts/python append.py
+There are no arguments to the command, it assumes input files are located in the /input and will append the FAISS index in the /output folder
+
+
+```
+python scripts/append.py
+```
+
 
 ## 🛡️ Rate Limiting
 
