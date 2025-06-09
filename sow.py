@@ -130,7 +130,7 @@ def home():
                 "You are an expert SOW writer for a fractional Rev Ops agency leveraging David Maxey's AI enhanced solution library.\n"
                 "You have access to our AI Enhanced Library of Revenue Operations solutions, including 50+ articles and proven frameworks.\n"
                 f"Your task is to draft a clean, creative, and professional Statement of Work dated {doc_date}.\n"
-                "Draw on specific models, case studies, and examples in the library to propose tailored deliverables.\n"
+                "Draw on specific models, case studies, and examples in the library to propose tailored, specific and high value  deliverables.\n"
                 "Timelines should scale with deliverable count: shorter timelines = fewer deliverables; longer timelines = more.\n"
                 "Output only HTML using <h1> for header, <h3> for paragraph titles, <ul>/<ol> for lists, <p> for paragraphs.\n"
                 "Include a clear Deliverables section and a professional Exclusions clause covering anything not core to the problem.\n"
@@ -140,7 +140,8 @@ def home():
 
             user_msg = (
                 "Document Date: " + doc_date + "\n"
-                "Never use company names like Sinalite or Boas or Marine or anything that resembles a company name or person's name in the output\n"
+                "Never use any word that resembels or could be a company names or person's name in the output\n"
+                "If you aren't sure if it is a name of a company or some identifiable information, choose to omit it out of caution"
                 "You are a senior consultant at Rev Ops Agency preparing a formal Statement of Work.\n"
                 "Incorporate problem statement, stakeholder details, timeline, GTM stack, and library insights.\n\n"
                 "Use DuckDuckGo integration to pull more updated information about GTM stack capabilities and integrate into deliverables\n"
@@ -149,7 +150,8 @@ def home():
                 "Stakeholders / Participants:\n" + participants + "\n\n"
                 "GTM Stack:\n" + gtm_stack + "\n\n"
                 "Proposed Timeline:\n" + timeline + "\n\n"
-                "Generate the full SOW in HTML only, with SMART deliverables and professional exclusions. "
+                "Generate the full SOW in HTML only, with SMART (Specific, Measurable, Achievable, Realistic, Time-bound) deliverables and professional exclusions. "
+                "Use the SMART format for deliverables, but do not state each one as a bullet, but rather cover each requirement in a compelling narrative"
                 "The last portion should be 'Future State / Outcomes', outlining the value and outcomes."
             )
 
