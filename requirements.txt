@@ -1,0 +1,10 @@
+flask
+openai
+python-dotenv
+numpy
+faiss-cpu
+duckduckgo-search
+xhtml2pdf
+flask-limiter
+langchain
+langchain-community
